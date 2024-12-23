@@ -1355,6 +1355,13 @@ DRR_MODULES[DRR["93"]] = {
 				local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.012, 0) })
 				local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 0 })
 
+local Click = Instance.new("Sound")
+Click.Name = "Click"
+Click.SoundId = "rbxassetid://452267918"
+Click.Parent = game:GetService("SoundService")
+ Click:Play()
+
+
 				tw:Play()
 				tw.Completed:Wait()
 				tw2:Play()
@@ -1368,7 +1375,11 @@ DRR_MODULES[DRR["93"]] = {
 				local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.95, 0) })
 				local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.173, 0) })
 				local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 180 })
-
+local Click = Instance.new("Sound")
+Click.Name = "Click"
+Click.SoundId = "rbxassetid://452267918"
+Click.Parent = game:GetService("SoundService")
+ Click:Play()
 				tw:Play()
 				tw.Completed:Wait()
 				tw2:Play()
