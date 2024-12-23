@@ -74,7 +74,10 @@ DRR["8"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 -- DrRay.TopBar.UIGradient
 DRR["9"] = Instance.new("UIGradient", DRR["2"]);
 DRR["9"]["Rotation"] = 90;
-DRR["9"]["Color"] = ColorSequence.new(ColorSequenceKeypoint.new(0.00, Color3.new(0.08, 0.09, 0.39)), ColorSequenceKeypoint.new(1.00, Color3.new(0.08, 0.08, 0.29)));
+DRR["9"]["Color"] = ColorSequence.new({
+	ColorSequenceKeypoint.new(0.00, Color3.new(0.08, 0.09, 0.39)),
+	ColorSequenceKeypoint.new(1.00, Color3.new(0.08, 0.08, 0.29))
+})
 
 -- DrRay.TopBar.TopBar
 DRR["a"] = Instance.new("Frame", DRR["2"]);
@@ -89,7 +92,10 @@ DRR["a"]["Name"] = [[TopBar]];
 -- DrRay.TopBar.TopBar.UIGradient
 DRR["b"] = Instance.new("UIGradient", DRR["a"]);
 DRR["b"]["Rotation"] = -90;
-DRR["b"]["Color"] = ColorSequence.new(ColorSequenceKeypoint.new(0.00, Color3.new(0.08, 0.09, 0.39)), ColorSequenceKeypoint.new(1.00, Color3.new(0.08, 0.08, 0.29)));
+DRR["b"]["Color"] =  ColorSequence.new({
+	ColorSequenceKeypoint.new(0.00, Color3.new(0.08, 0.09, 0.39)),
+	ColorSequenceKeypoint.new(1.00, Color3.new(0.08, 0.08, 0.29))
+});
 
 -- DrRay.TopBar.ProfileMenu
 DRR["c"] = Instance.new("Frame", DRR["2"]);
@@ -1355,13 +1361,6 @@ DRR_MODULES[DRR["93"]] = {
 				local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.012, 0) })
 				local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 0 })
 
-local Click = Instance.new("Sound")
-Click.Name = "Click"
-Click.SoundId = "rbxassetid://452267918"
-Click.Parent = game:GetService("SoundService")
- Click:Play()
-
-
 				tw:Play()
 				tw.Completed:Wait()
 				tw2:Play()
@@ -1375,11 +1374,7 @@ Click.Parent = game:GetService("SoundService")
 				local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.95, 0) })
 				local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.173, 0) })
 				local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 180 })
-local Click = Instance.new("Sound")
-Click.Name = "Click"
-Click.SoundId = "rbxassetid://452267918"
-Click.Parent = game:GetService("SoundService")
- Click:Play()
+
 				tw:Play()
 				tw.Completed:Wait()
 				tw2:Play()
